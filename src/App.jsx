@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 function App() {
   return (
       <BrowserRouter>
-      <div className="">
+      <div className="min-h-screen">
       <Navbar/>
       <Herosection/>
       </div>
