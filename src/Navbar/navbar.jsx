@@ -3,26 +3,26 @@ import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#e4e8ff] via-[#f7f4ff] to-[#e4f4ff] flex flex-col items-center justify-center">
-       <nav className="fixed top-0 left-0 w-full z-50 px-6 py-6 bg-purple-300 text-white dark:bg-gray-900 dark:text-white">
+    <div className="">
+       <nav className="fixed top-0 left-0 w-full z-50 px-6 py-4 bg-white/10 backdrop-blur-md shadow-lg text-white dark:bg-gray-900/30 dark:text-white">
         <div className="flex justify-between items-center font-bold">
             <h3 className=" text-white text-3xl">YSTAFF</h3>
             <div className="flex items-center">
-                <ul className="flex text-xl decoration-amber-50">
-                    <li className="mx-5">
-                        <Link to="/" className="cursor-pointer hover:text-2xl hover:placeholder:">Dashboard</Link>
+                <ul className="flex text-lg decoration-amber-50">
+                    <li className="mx-6">
+                        <Link to="/" className="cursor-pointer hover:text-xl hover:placeholder:">Dashboard</Link>
                     </li>
-                    <li className="mx-5">
-                        <Link to="/" className="cursor-pointe  hover:text-2xl hover:placeholder:">Product</Link>
+                    <li className="mx-6">
+                        <Link to="/" className="cursor-pointe  hover:text-xl hover:placeholder:">Product</Link>
                     </li>
-                    <li className="mx-5">
-                        <Link to="/" className="cursor-pointe  hover:text-2xl hover:placeholder:">Pricing</Link>
+                    <li className="mx-6">
+                        <Link to="/" className="cursor-pointe  hover:text-xl hover:placeholder:">Pricing</Link>
                     </li>
-                    <li className="mx-5">
-                        <Link to="/" className="cursor-pointer hover:text-2xl hover:placeholder:">Resource</Link>
+                    <li className="mx-6">
+                        <Link to="/" className="cursor-pointer hover:text-xl hover:placeholder:">Resource</Link>
                     </li>
-                    <li className="mx-5">
-                        <Link to="/" className="cursor-pointer hover:text-2xl hover:placeholder:">Contact Us</Link>
+                    <li className="mx-6">
+                        <Link to="/" className="cursor-pointer hover:text-xl hover:placeholder:">Contact Us</Link>
                     </li>
                 </ul>
                 <button id="toggle-dark"
