@@ -1,6 +1,6 @@
-import { div } from 'framer-motion/client';
 import React from 'react'
 import { FaUserAlt, FaCalendarCheck, FaTasks, FaChartBar } from "react-icons/fa";
+import { motion } from "motion/react"; 
 
 const FeatureData = [
   {
@@ -41,7 +41,11 @@ const Featuresection = () => {
       </div>
 
       {/* Cards Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6 w-full max-w-7xl">
+      <motion.div 
+      initial={{opacity:0, translateY:"-100%"}}
+   whileInView={{opacity:1, translateY:0}}
+   transition={{duration:2}}
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6 w-full max-w-7xl">
         {FeatureData.map((item) => (
           <div
             key={item.id}
@@ -56,7 +60,7 @@ const Featuresection = () => {
             <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
           </div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };
