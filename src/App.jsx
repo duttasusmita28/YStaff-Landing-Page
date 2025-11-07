@@ -3,6 +3,7 @@ import Navbar from './Navbar/navbar'
 import Herosection from './Herosection/herosection'
 import { BrowserRouter } from 'react-router-dom';
 import Featuresection from './Featuresection/feature'
+import Bannersection from './Bannersection/whyystaff'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar/>
       <Herosection/>
       <Featuresection/>
+      <Bannersection/>
       </div>
       </BrowserRouter>
   )
