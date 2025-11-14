@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Featuresection from './Featuresection/feature'
 import Bannersection from './Bannersection/whyystaff'
 import Projectsection from './Projectssection/projectsliders'
+import Footersection from './Footer/footer'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Featuresection/>
       <Bannersection/>
       <Projectsection/>
+      <Footersection/>
       </div>
       </BrowserRouter>
   )
