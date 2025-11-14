@@ -4,6 +4,7 @@ import Herosection from './Herosection/herosection'
 import { BrowserRouter } from 'react-router-dom';
 import Featuresection from './Featuresection/feature'
 import Bannersection from './Bannersection/whyystaff'
+import Projectsection from './Projectssection/projectsliders'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Herosection/>
       <Featuresection/>
       <Bannersection/>
+      <Projectsection/>
       </div>
       </BrowserRouter>
   )
